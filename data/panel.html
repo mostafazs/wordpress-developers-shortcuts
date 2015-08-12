@@ -27,14 +27,21 @@
 <input type="text" placeholder="Unique Theme Name" onmouseout="changelink2()" id="input2"/>
 <a href="https://themes.trac.wordpress.org/browser/" class="btn" placeholder="" target="_blank" onclick="addon.port.emit('hide');" id="ourlink2">Browse Theme Trace</a>
 
+<input type="text" placeholder="Search Codex" onmouseout="changelink3()" id="input3"/>
+<a href="https://wordpress.org/search/" class="btn" placeholder="" target="_blank" onclick="addon.port.emit('hide');" id="ourlink3">FindInCodex</a>
+
+<input type="text" placeholder="Search Support" onmouseout="changelink4()" id="input4"/>
+<a href="https://wordpress.org/search/" class="btn" placeholder="" target="_blank" onclick="addon.port.emit('hide');" id="ourlink4">FindInSupport</a>
+
+<input type="text" placeholder="Search Developer" onmouseout="changelink5()" id="input5"/>
+<a href="https://developer.wordpress.org/?s=" class="btn" placeholder="" target="_blank" onclick="addon.port.emit('hide');" id="ourlink5">FindInDeveloper</a>
+
 <script type="text/javascript">
 /*
-
-Script for changing value of links
-
-@Since: 1.0
-@Package: Wordpress-Developers-Shortcuts
-@Copyright: By Mostafa
+	@Desc: function for changing link values
+	@Since: 1.0
+	@Package: Wordpress-Developers-Shortcuts
+	@Copyright: By Mostafa
 */
 function changelink1(){
 
@@ -51,6 +58,30 @@ inputvalue2 = document.getElementById('input2').value;
 	//document.getElementById("myinput").innerHTML = "http://example.com/" + inputvalue + "/";
 	var updatelink2 = "https://themes.trac.wordpress.org/browser/" + inputvalue2 + "/";
 	document.getElementById("ourlink2").setAttribute('href', updatelink2);
+}
+function changelink3(){
+
+inputvalue3 = document.getElementById('input3').value;
+    //window.alert(inputvalue);
+	//document.getElementById("myinput").innerHTML = "http://example.com/" + inputvalue + "/";
+	var updatelink3 = "https://wordpress.org/search/" + inputvalue3 + "";
+	document.getElementById("ourlink3").setAttribute('href', updatelink3);
+}
+function changelink4(){
+
+inputvalue4 = document.getElementById('input4').value;
+    //window.alert(inputvalue);
+	//document.getElementById("myinput").innerHTML = "http://example.com/" + inputvalue + "/";
+	var updatelink4 = "https://wordpress.org/search/" + inputvalue4 + "?forums=1";
+	document.getElementById("ourlink4").setAttribute('href', updatelink4);
+}
+function changelink5(){
+
+inputvalue5 = document.getElementById('input5').value;
+    //window.alert(inputvalue);
+	//document.getElementById("myinput").innerHTML = "http://example.com/" + inputvalue + "/";
+	var updatelink5 = "https://developer.wordpress.org/?s=" + inputvalue5 + "";
+	document.getElementById("ourlink5").setAttribute('href', updatelink5);
 }
 </script>
 

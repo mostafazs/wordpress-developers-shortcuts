@@ -3,9 +3,9 @@
   "title": "Wordpress Developers Shortcuts",
   "main": "./lib/main.js",
   "id": "wp-developers-shortcuts",
-  "description": "a simple addon showing useful wordpress.org shortcuts for developers ",
+  "description": "Simple and useful shortcuts for the wordpress developers",
   "author": "Mostafa",
   "icon": "./data/icon.png",
   "license": "MPL 2.0",
-  "version": "0.1"
+  "version": "0.2"
 }
